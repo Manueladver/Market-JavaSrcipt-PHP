@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- CSS APLICACIÓN -->
+    <link rel="stylesheet" type="text/css" href="./css/estilos_edit_del.css" hreflang="es">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- SCRIPTS APLICACIÓN -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"/></script>
+    <script src="./js/altaCliente.js"/></script>
+
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+        <h1 class="display-4">Supermercado "Lo + Sano" - Alta Clientes</h1>
+
+        <div class="row">
+
+          <div class="col-12">
+
+            <div id="edit_del">
+
+              <h3>Aquí podrás dar de alta a un cliente nuevo</h3>
+
+              <form id="factura-form" style="display: block;">
+                <label for="nombre" style="width: 25%; display: inline-block; line-height: 40px;">Nombre: </label><input id="nombre" class="border-success" type="text" placeholder="Fulanito" style="width: 70%;"><br><label for="dni" style="width: 25%; display: inline-block; line-height: 40px;">DNI: </label><input id="dni" class="border-success" type="text" placeholder="12345678A" style="width: 70%;"><br><label for="domicilio" style="width: 25%; display: inline-block; line-height: 40px;">Domicilio: </label><input id="domicilio" class="border-success" type="text" placeholder="Av. 123" style="width: 70%;"><br><label for="poblacion" style="width: 25%; display: inline-block; line-height: 40px;">Población: </label><input id="poblacion" class="border-success" type="text" placeholder="Benidorm" style="width: 70%;"><br><label for="provincia" style="width: 25%; display: inline-block; line-height: 40px;">Provincia: </label><input id="provincia" class="border-success" type="text" placeholder="Alicante" style="width: 70%;"><br>
+                 <button id="btn-registro" class="btn btn-success" style="margin: 15px; display: inline;">Registro</button>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <br>
+        <hr/>
+
+        <div class="row">
+
+          <div class="col-12">
+            <h2>Zona de Mantenimiento</h2>
+            <div class="pie mx-auto" style="width:45%; padding-bottom: 10px;">
+              <button id="volver" class="mar_t_10 btn btn-success">Inicio</button> <button id="alta" class="mar_t_10 btn btn-success">Alta de Producto</button> <button id="del" class="mar_t_10 btn btn-success">Editar/Borrar Producto</button> <button id="altcliente" class="mar_t_10 btn btn-success">Alta Cliente</button> <button id="editcliente" class="mar_t_10 btn btn-success">Editar/Borrar Cliente</button> <button id="editfact" class="mar_t_10 btn btn-success">Editar Facturas</button>
+             </div>
+          </div>
+
+        </div>
+
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE>
+<html>
+  <head>
+     <meta charset="utf-8">
+
+     <!-- CSS APLICACIÓN -->
+     <link rel="stylesheet" type="text/css" href="./css/estilos.css" hreflang="es">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <!-- SCRIPTS APLICACIÓN -->
+     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"/></script>
+     <script src="./js/scripts.js"/></script>
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+      <h1 class="display-4">Supermercado "Lo + Sano"</h1>
+
+      <div class="row">
+
+        <div class="col-6">
+
+          <div id="izquierda">
+
+            <h2>Selecciona la categoría de productos</h2>
+
+            <div class="cat_list">
+              <select id="categoria" class="form-control"><option value="#">-- Categoría --</option></select> <button id="mostrar" class="mar_t_10 btn-sm btn-success">Mostrar</button> <br><br>
+            </div> 
+
+            <div id="products_list"></div> 
+
+          </div>
+
+        </div>
+
+        <div class="col-6">
+
+          <div id="factura">
+
+            <h2>Añade productos a tu cesta</h2>
+
+            <div id="ffac" class="border-success"></div>
+
+            <form id="miform" action="*">
+              Número de factura: <span id="nfactura"></span>
+              <br>
+              Cliente: <span id="ncliente"></span>
+              <br>
+              <br>
+              <label for="ref">Ref: </label><input type="text" id="ref" class="border-success" value="" placeholder="ref" disabled="true">
+              <label for="precio">Precio: </label><input type="text" id="precio" class="border-success" value="" placeholder="000.00" disabled="true"><br>
+              <label for="cantidad">Cantidad: </label><input type="text" id="cantidad" class="border-success" value="" placeholder="en KG"><br><br>
+              <button id="grabar" class="btn btn-success">Añadir producto</button> 
+              <button id="cancelar" class="mar_t_10 btn btn-success">Limpiar campos</button>
+            </form>
+            <hr/>
+            <table id="lineas" class="table table-striped">
+
+              <colgroup>
+                <col><col><col><col><col><col>
+              </colgroup>
+
+              <tfoot>
+                <tr>
+                  <td colspan="3">Total</td><td class="total a_derecha">0</td>
+                </tr>
+              </tfoot>
+
+              <tr class="table-success">
+                <th class="ancho2">Ref.</th><th class="ancho3">Precio</th><th class="ancho3">Cantidad</th><th class="ancho3">Total</th><th class="ancho3"></th>
+              </tr>
+     
+            </table>
+
+            <button id="almacenar" class="mar_t_10 btn btn-success">Grabar Factura</button> <button id="recuperar" class="mar_t_10 btn btn-success">Recuperar Facturas</button> 
+            <hr/>
+            <h4>Selecciona una factura y visualízala en la tabla</h4>
+            <select id="lisfacatura" class="form-control">
+              <option value="#">Selecciona una factura</option>
+            </select>
+            <button id="cargar_factura" class="mar_t_10 btn btn-success">Cargar Factura</button>
+          </div>
+        
+        </div>
+
+      </div>
+      <br>
+      <hr/>
+
+      <div class="row">
+
+        <div class="col-12">
+          <h2>Zona de Mantenimiento</h2>
+          <div class="pie mx-auto" style="width:41%; padding-bottom: 10px;">
+            <button id="alta" class="mar_t_10 btn btn-success">Alta de Producto</button> <button id="borrar" class="mar_t_10 btn btn-success">Editar/Borrar Producto</button> <button id="altcliente" class="mar_t_10 btn btn-success">Alta Cliente</button> <button id="editcliente" class="mar_t_10 btn btn-success">Editar/Borrar Cliente</button> <button id="editfact" class="mar_t_10 btn btn-success">Editar Facturas</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

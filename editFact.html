@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html>
+  <head>
+     <meta charset="utf-8">
+
+     <!-- CSS APLICACIÓN -->
+     <link rel="stylesheet" type="text/css" href="./css/estilosFact.css" hreflang="es">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <!-- SCRIPTS APLICACIÓN -->
+     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"/></script>
+     <script src="./js/editFact.js"/></script>
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+      <h1 class="display-4">Supermercado "Lo + Sano"</h1>
+
+      <div class="row">
+
+        <div class="col-6">
+
+          <div id="izquierda">
+
+            <h2>Selecciona el año del que quieras ver las facturas</h2>
+
+            <div class="list_ano">
+              <select id="ano" class="form-control"><option value="#">-- Año --</option></select> <button id="mostrar" class="mar_t_10 btn-sm btn-success">Mostrar</button> <br><br>
+            </div> 
+
+            <table id="lineas" class="table table-striped">
+
+              <colgroup>
+                <col><col><col><col><col><col>
+              </colgroup>
+
+              <tr class="table-success">
+                <th class="ancho2">Num.</th><th class="ancho3">Dni cliente</th><th class="ancho3">Total</th><th class="ancho3">Estado</th><th class="ancho3"></th><th class="ancho3"></th><th class="ancho3"></th>
+              </tr>
+     
+            </table>
+
+          </div>
+
+        </div>
+
+        <div class="col-6">
+
+          <div id="factura">
+
+            <h2>Edita los datos de la factura seleccionada</h2>
+
+            <table id="detalles" class="table table-striped">
+
+              <colgroup>
+                <col><col><col><col><col><col>
+              </colgroup>
+
+              <tr class="table-success">
+                <th class="ancho2">ID</th><th class="ancho2">Ref.</th><th class="ancho3">Precio</th><th class="ancho3">Cantidad</th><th class="ancho3">Total</th><th class="ancho3"></th><th class="ancho3"></th>
+              </tr>
+     
+            </table>
+
+          </div>
+        
+        </div>
+
+      </div>
+      <br>
+      <hr/>
+
+      <div class="row">
+
+        <div class="col-12">
+          <h2>Zona de Mantenimiento</h2>
+          <div class="pie mx-auto" style="width:44%; padding-bottom: 10px;">
+            <button id="volver" class="mar_t_10 btn btn-success">Inicio</button> <button id="alta" class="mar_t_10 btn btn-success">Alta de Producto</button> <button id="del" class="mar_t_10 btn btn-success">Editar/Borrar Producto</button> <button id="altcliente" class="mar_t_10 btn btn-success">Alta Cliente</button> <button id="editcliente" class="mar_t_10 btn btn-success">Editar/Borrar Cliente</button> <button id="editfact" class="mar_t_10 btn btn-success">Editar Facturas</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

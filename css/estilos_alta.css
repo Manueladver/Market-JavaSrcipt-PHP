@@ -1,0 +1,33 @@
+body {
+  background: url("../imagenes/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1, h2, h3 {
+  text-align:center;
+  padding: 20px 0;
+}
+
+#izquierda{
+  margin: 0 auto;
+  width: 80%;
+  border: 2px solid green;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: auto;
+  background: #fff;
+}
+
+#producto{ 
+  margin: 0 auto;
+  width: 80%;
+  border: 2px solid green;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: auto;
+  background: #fff;

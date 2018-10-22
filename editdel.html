@@ -1,0 +1,71 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- CSS APLICACIÓN -->
+    <link rel="stylesheet" type="text/css" href="./css/estilos_edit_del.css" hreflang="es">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- SCRIPTS APLICACIÓN -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"/></script>
+    <script src="./js/editRemove.js"/></script>
+
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+        <h1 class="display-4">Supermercado "Lo + Sano" - Editar Productos</h1>
+
+        <div class="row">
+
+          <div class="col-12">
+
+            <div id="edit_del">
+
+              <h3>Selecciona el producto que quieres modificar o dar de baja</h3>
+
+              <form id="csForm" action="*" method="POST" enctype="multipart/form-data">
+
+                <label for="producto">Producto: </label> <select id="producto" class="border-success form-control"><option value="Elige un producto">Elige un producto</option></select><br> 
+                <button id="editar" class="mar_t_10 btn btn-success" name="editar">Editar</button> <button id="borrar" class="mar_t_10 btn btn-warning">Borrar</button><br><br>
+                <br>
+                <div id="edit_product">
+                  <label for="categoría">Categoría: </label><select id="cat_pr" class="border-success form-control"><option value="#">-- Categoría --</option></select><br>
+                  <label for="nombre">Nombre: </label><input type="text" id="nombre" class="border-success form-control" value="" placeholder="nombre"><br>
+                  <label for="ref">Ref: </label><input type="text" id="ref" class="border-success form-control" value="" placeholder="ref"><br>
+                  <label for="precio">Precio: </label><input type="text" id="precio" class="border-success form-control" value="" placeholder="000.00"><br>
+                  <label for="imagen">Imagen: </label><br><input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+                  <p>Imagen actual: </p>
+                  <div id="ffac" class="border-success"></div>
+                  <br>
+                  <button id="modificar" class="mar_t_10 btn btn-success" name="modificar">Modificar</button>
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <br>
+        <hr/>
+
+        <div class="row">
+
+          <div class="col-12">
+            <h2>Zona de Mantenimiento</h2>
+            <div class="pie mx-auto" style="width:45%; padding-bottom: 10px;">
+              <button id="volver" class="mar_t_10 btn btn-success">Inicio</button> <button id="alta" class="mar_t_10 btn btn-success">Alta de Producto</button> <button id="del" class="mar_t_10 btn btn-success">Editar/Borrar Producto</button> <button id="altcliente" class="mar_t_10 btn btn-success">Alta Cliente</button> <button id="editcliente" class="mar_t_10 btn btn-success">Editar/Borrar Cliente</button> <button id="editfact" class="mar_t_10 btn btn-success">Editar Facturas</button>
+             </div>
+          </div>
+
+        </div>
+
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html>
+  <head>
+     <meta charset="utf-8">
+
+     <!-- CSS APLICACIÓN -->
+     <link rel="stylesheet" type="text/css" href="./css/estilos_alta.css" hreflang="es">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <!-- SCRIPTS APLICACIÓN -->
+     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"/></script>
+     <script src="./js/alta.js"/></script>
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+      <h1 class="display-4">Supermercado "Lo + Sano" Alta de Productos</h1>
+
+      <div class="row">
+
+          <div class="col-6">
+
+            <div id="izquierda">
+
+              <h3>Formulario para dar de alta una categoría de producto en la BB.DD.</h3>
+
+              <form id="formAlta" method="POST" enctype="multipart/form-data">
+
+                <label for="cat">Categoría: </label>
+                <input type="text" id="cat" class="border-success form-control" value="" placeholder="categoría"><br><br>
+                <label for="descripcion">Descripción (Máx. 500)</label><br>
+                <textarea id="descripcion" class="border-success form-control" value="" placeholder="descripción" cols="80" rows="4" maxlength="500"></textarea><br><br>
+                <button id="inscat" class="mar_t_10 btn btn-success" name="inscat" value="inscat">Añadir</button><br><br>
+          
+              </form>
+
+            </div>
+
+          </div>
+
+          <div class="col-6">
+
+            <div id="producto">
+
+               <h3>Formulario para dar de alta un producto en la BB.DD.</h3>
+
+              <form id="formAlta" method="POST" enctype="multipart/form-data">
+
+                <label for="categoría">Categoría: </label>
+                <select id="categoria" class="border-success form-control"><option value="#">-- Categoría --</option></select><br>
+                <label for="nombre">Nombre: </label> 
+                <input type="text" id="nombre" class="border-success form-control" value="" placeholder="nombre"><br>
+                <label for="ref">Ref: </label> 
+                <input type="text" id="ref" class="border-success form-control" value="" placeholder="ref"><br>
+                <label for="precio">Precio: </label> 
+                <input type="text" id="precio" class="border-success form-control" value="" placeholder="000.00"><br>
+                <label for="imagen">Imagen: </label> <br>
+                <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+
+            </form>
+
+            <button id="insertar" class="mar_t_10 btn btn-success" name="insertar" value="insertar">Añadir</button>
+
+          </div>
+
+          </div>
+
+      </div>
+
+      <br>
+      <hr/>
+
+      <div class="row">
+
+        <div class="col-12">
+          <h2>Zona de Mantenimiento</h2>
+          <div class="pie mx-auto" style="width:45%;">
+            <button id="volver" class="mar_t_10 btn btn-success">Inicio</button> <button id="alta" class="mar_t_10 btn btn-success">Alta de Producto</button> <button id="borrar" class="mar_t_10 btn btn-success">Editar/Borrar Producto</button> <button id="altcliente" class="mar_t_10 btn btn-success">Alta Cliente</button> <button id="editcliente" class="mar_t_10 btn btn-success">Editar/Borrar Cliente</button> <button id="editfact" class="mar_t_10 btn btn-success">Editar Facturas</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
